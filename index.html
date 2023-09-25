@@ -12,26 +12,29 @@
     </style>
 </head>
 <body>
-     <audio id="foobar" src="audio.mp3" preload="auto" autoplay></audio>
-    <div class="duck duck1">
+     <audio id="foobar" src="audio.mp3" preload="auto" autoplay="autoplay"></audio>
+    <div class="duck duck1" onclick="soundClick()>
         <input type="checkbox" class="duckOn" id="duckOn1">
         <label for="duckOn1"></label>
         
     </div>
-    <div class="duck duck2">
+    <div class="duck duck2" onclick="soundClick()>
         <input type="checkbox" class="duckOn" id="duckOn2">
         <label for="duckOn2"></label>
         
     </div>
-    <div class="duck duck3">
+    <div class="duck duck3" onclick="soundClick()>
         <input type="checkbox" class="duckOn" id="duckOn3">
         <label for="duckOn3"></label>
         
     </div>
     <div class="count">Сбили: </div>
          <script>
-             let sample = document.getElementById("foobar");
-             sample.play();
+             // let sample = document.getElementById("foobar");
+             // sample.play();
+             let audio = new Audio(); // Создаём новый элемент Audio
+             audio.src = 'audio.mp3'; // Указываем путь к звуку "клика"
+             audio.autoplay = true; // Автоматически запускаем
          </script>
 </body>
 </html>
