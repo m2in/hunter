@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="img/target.png" type="image/x-icon">
     <link rel="shortcut icon" href="img/target.png" type="image/x-icon">
+    <style>
+        #foobar { display: none }
+    </style>
 </head>
 <body>
+     <audio id="foobar" src="audio/audio.mp3" preload="auto"> 
     <div class="duck duck1">
         <input type="checkbox" class="duckOn" id="duckOn1">
         <label for="duckOn1"></label>
@@ -25,5 +29,9 @@
         
     </div>
     <div class="count">Сбили: </div>
+         <script>
+             let sample = document.getElementById("foobar");
+             sample.play();
+         </script>
 </body>
 </html>
