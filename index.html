@@ -27,19 +27,29 @@
         
     </div>
     <div class="count">
+        <button onclick="play()">Play Audio</button>
         <audio src="audio.mp3" preload="auto" controls>
             <a href="audio.mp3"> Download audio </a>
         </audio>
         Сбили: </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.min.js"></script>
-<script>
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.min.js"></script> -->
+   <!-- <script>
     var sound = new Howl({
       src: ['audio.mp3'],
   autoplay: true,
   loop: true,
     });
     sound.play();
-</script>
+</script> -->
+
+    <script>
+        var audio = new Audio('audio_file.mp3');
+audio.play();
+        function play() {
+  var audio = new Audio('https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3');
+  audio.play();
+}
+    </script>
          
 </body>
 </html>
